@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="OlW-q5-jfy" customClass="PriceCell">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OlW-q5-jfy" id="fz1-nq-r3q">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10元" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iJ-Yg-n7U">
+                        <rect key="frame" x="29" y="8" width="218" height="77"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.16748400820000001" blue="0.14285376790000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmI-hZ-PGo">
+                        <rect key="frame" x="264" y="30" width="60" height="39"/>
+                        <color key="backgroundColor" red="0.89228173276886513" green="0.18107685666043799" blue="0.21417991566068509" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="使用">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="ClickUserAction:" destination="OlW-q5-jfy" eventType="touchUpInside" id="mfF-Is-CF4"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="priceLabel" destination="5iJ-Yg-n7U" id="qdH-PH-7Bt"/>
+                <outlet property="useBtn" destination="UmI-hZ-PGo" id="KfL-x1-r9T"/>
+            </connections>
+            <point key="canvasLocation" x="275" y="220"/>
+        </tableViewCell>
+    </objects>
+</document>
